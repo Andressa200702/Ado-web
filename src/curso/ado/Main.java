@@ -1,19 +1,18 @@
 package curso.ado;
 
+import java.util.Scanner;
+
 public class Main {
-     public static void main(String[] args) {
-         Sistema sistema= new Sistema();
 
-         sistema.cadastrar("Andressa Xavier", 23, "232.323.353-33",
-                 "andressasx02@gmail.com", "selfme2026" );
+    public static void main(String[] args) {
+        Scanner sr = new Scanner(System.in);
+        Sistema sistema = new Sistema();
 
-         sistema.logar("andressasx02@gmail.com", "selfme2026");
+        // cursos de exemplo
+        sistema.cadastrarCurso("Python", "Introdução à lógica e sintaxe em Python", "40");
+        sistema.cadastrarCurso("Java", "Programação orientada a objetos com Java", "60");
+        sistema.cadastrarCurso("SQL", "Consultas e modelagem de banco de dados", "30");
 
-         Usuario n1= new Usuario();
-         n1.nome= "Andressa Xavier";
-         n1.inscricaoCurso(1, "Python");
-
-         Cursos curso = new Cursos(1, "Python", "40");
-
+        sistema.executar(sr);
     }
 }

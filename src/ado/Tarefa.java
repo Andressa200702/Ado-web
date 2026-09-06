@@ -14,20 +14,19 @@ public class Tarefa {
         this.finalizado = finalizado;
     }
 
-        public int getID(){
-            return id;
-        }
+    public int getID(){
+        return id;
+    }
 
-        public String getTitulo(){
-            return titulo;
-        }
+    public String getTitulo(){
+        return titulo;
+    }
 
-        public String getDescricao(){
-            return titulo;
-        }
+    public String getDescricao(){
+        return descricao;
+    }
 
-        public boolean getFinalizado(){
-            return finalizado;
-        }
+    public boolean getFinalizado(){
+        return finalizado;
     }
 }
